@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Pawan Kolhe</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav id="mainNav">
+		<div class="nav-content">
+			<ul>
+				<li><a href="#secAbout" class="smooth_scroll">About</a></li>
+				<li><a href="#secSchedule" class="smooth_scroll">Schedule</a></li>
+				<li><a href="#secVenue" class="smooth_scroll">Venue</a></li>
+				<li><a href="#secPrize" class="smooth_scroll">Prize</a></li>
+				<li><a href="#secRegister" class="smooth_scroll">Register</a></li>
+				<li><a href="https://www.pubgmobile.com/en-US/" style="color: #ffc613;" target="_blank">Download</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<section id="secHero">
+		<div class="hero-content">
+			<h1>PUBG Mobile Championship 2019</h1>
+			<a href="#secRegister"><button class="but-register">Register</button></a>
+		</div>
+	</section>
+	<section id="secAnnounce">
+		<div class="announce-content">
+			<div class="announce-head">Announcement</div>
+			<p class="announce-text">Tournament date released!</p>
+		</div>
+	</section>
+	<section id="secAbout" class="sec-container-light">
+		<div class="sec-content">
+			<h2>About</h2>
+			<img id="imgAbout" src="images/pubg_car.png" alt="PUBG Car">
+			<p>PUBG MOBILE CHAMPIONSHIP 2019 is a PUBG MOBILE tournament exclusively for college students featuring a total  prize pool of over 50 Lakh INR. Teams will qualify based on the match results. Play to win and play for fun! A competition of both skills and popularity! Compete over four consecutive weekends to become the official streamer for the region! Winning players from all regions will come together to compete for the role of official streamer! It is the biggest e-sports event in India and will bring in the biggest sponsors a gaming event has ever seen. So what are you waiting for? It's a solo tournament, just go and register!</p>
+		</div>
+	</section>
+	<section id="secSchedule" class="sec-container-dark">
+		<div class="sec-content">
+			<h2>Schedule</h2>
+			<p>PUBG MOBILE CHAMPIONSHIP will span from 12th Feb, 2019 to 3rd April, 2019. See you on the BATTLEGROUND!</p>
+			<div class="tab-container">
+				<table class="tab-schedule">
+					<tr>
+						<th>Activity</th>
+						<th>Start</th>
+						<th>End</th>
+					</tr>
+					<tr>
+						<td>Registraion</td>
+						<td>12th Feb</td>
+						<td>28th Feb</td>
+					</tr>
+					<tr>
+						<td>Check-In</td>
+						<td>2nd Mar</td>
+						<td>3rd Mar</td>
+					</tr>
+					<tr>
+						<td>Online Qualifiers</td>
+						<td>4th Mar</td>
+						<td>15th Mar</td>
+					</tr>
+					<tr>
+						<td>Grand Finals</td>
+						<td>1st Apr</td>
+						<td>3rd Apr</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section id="secVenue" class="sec-container-light">
+		<div class="sec-content">
+			<h2>Venue</h2>
+			<p>The GRAND FINALS will be held at</p>
+			<div id="venueName">Amity University, Mumbai</div>
+		</div>
+	</section>
+	<section id="secPrize" class="sec-container-dark">
+		<div class="sec-content">
+			<h2>Prize Pool</h2>
+			<p>PUBG MOBILE CHAMPIONSHIP 2019 is featuring a prize pool of over 50 Lakh INR.</p>
+			<img style="width: 100%; margin-top: 20px;" src="images/prize-pool.png" alt="Prize Pool">
+		</div>
+	</section>
+	<section id="secRegister" class="sec-container-light">
+		<div class="sec-content">
+			<h2>Register</h2>
+			<p id="secRegisterPara">Fill out the following details to enter the tournament:</p>
+			<form id="formRegister" name="formRegister" class="form-content" method="post" onsubmit="return validateForm()" action="">
+				<div class="form-row">
+					<div class="form-group">
+						<label>Name</label>
+						<input type="text" id="fm-name-1" name="fm-name-1" pattern="[a-zA-Z\s]+" required>
+					</div>
+					<div class="form-group">
+						<label>Re-enter Name</label>
+						<input type="text" id="fm-name-2" name="fm-name-2" pattern="[a-zA-Z\s]+" required>
+					</div>
+					<div class="form-group">
+						<label>Re-enter Name</label>
+						<input type="text" id="fm-name-3" name="fm-name-3" pattern="[a-zA-Z\s]+" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label>Your Email</label>
+						<input type="email" id="fm-email" name="fm-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+					</div>
+					<div class="form-group" style="position: relative;">
+						<label>New Password</label>
+						<input type="password" id="fm-password" name="fm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W]).{8,}$" required>
+						<div class="fm-password-tooltip">
+							<p id="fm-password-tooltip-lowercase" class="fm-password-invalid">A lowercase letter</p>
+							<p id="fm-password-tooltip-uppercase" class="fm-password-invalid">A uppercase letter</p>
+							<p id="fm-password-tooltip-number" class="fm-password-invalid">A number</p>
+							<p id="fm-password-tooltip-symbol" class="fm-password-invalid">A symbol</p>
+							<p id="fm-password-tooltip-length" class="fm-password-invalid">Minimum 8 characters</p>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label>Mobile Number</label>
+						<input type="tel" id="fm-phone" name="fm-phone" pattern="[0-9]{10}" required>
+					</div>
+					<div class="form-group">
+						<label>PUBG ID</label>
+						<input type="text" id="fm-pubg-id" name="fm-pubg-id" pattern="[0-9]{9}" required>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label>Age</label>
+						<input type="number" id="fm-age" name="fm-age" min="16" max="80" pattern="[0-9]{1}[0-9]{0,1}" required>
+					</div>
+					<div class="form-group" style="display: block">
+						<label>Gender</label>
+						<div>
+							<label class="form-radio">Male
+								<input style="display:inline;" type="radio" name="fm-gender" value="male" required>
+								<span class="checkmark"></span>
+							</label>
+							&nbsp;
+							<label class="form-radio">Female
+								<input style="display:inline;" type="radio" name="fm-gender" value="female" required>
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<p id="validationInfo"></p>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<button id="fm-submit" type="submit" onClick="validateForm()">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section id="secPattern">
+		<div class="pattern-content">&nbsp;</div>
+	</section>
+	<footer>
+		<div class="sec-content">
+			<div class="footer-social">
+				<a href="javascript:void(0)" target="_blank"><img src="images/social/twitter.png" alt="Twitter"></a>
+				<a href="javascript:void(0)" target="_blank"><img src="images/social/facebook.png" alt="Facebook"></a>
+				<a href="javascript:void(0)" target="_blank"><img src="images/social/instagram.png" alt="Instagram"></a>
+				<a href="javascript:void(0)" target="_blank"><img src="images/social/youtube.png" alt="Youtube"></a>
+			</div>
+			<div class="footer-copyright">
+				<p>&copy; Pawan Kolhe</p>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/validation.js"></script>
+</body>
+</html>
